@@ -1,0 +1,39 @@
+body{
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    font-size: 1.2rem;
+}
+.container{
+    background-color: burlywood;
+    border-radius: 10px;
+    padding: 16px;
+}
+.container h2{
+    text-align: center;
+}
+.container p{
+    padding: 8px 10px;
+    background-color: black;
+    transition: .4s;
+}
+.container p:hover{
+    background-color: transparent;
+}
+.container button{
+    background-color: chartreuse;
+    color: burlywood;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.container button:hover{
+    transform: scale(1.2);
+}

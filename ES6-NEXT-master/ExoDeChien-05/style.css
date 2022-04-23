@@ -1,0 +1,12 @@
+div{
+    display: flex;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    padding: 25px;
+    background-color: burlywood;
+    border-radius: 50%;
+}

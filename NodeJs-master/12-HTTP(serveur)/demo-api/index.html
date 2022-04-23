@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test html</title>
+</head>
+<body>
+    <script>
+        async function init() {
+            // on récupère nos posts
+            const posts = await fetch("http://localhost:2020/posts");
+            // on transforme nos posts en json
+            const json = await posts.json();
+            
+            // on sélectionne le body de notre document HTML
+            const body = document.querySelector("body");
+
+            // pour chaque post
+            for (const post of json.posts) {
+                // on créee les différentes balises
+                const article = document.createElement("article");
+                const h2 = document.createElement("h2");
+                const contenu = document.createElement("p");
+
+                // on met le contenu
+                h2.innerText = post.title;
+                contenu.innerText = post.content;
+
+                // on ajoute nos éléments à notre body
+                article.appendChild(h2);
+                article.appendChild(contenu);
+                body.appendChild(article);
+            }
+        }
+        init();
+    </script>
+</body>
+</html>

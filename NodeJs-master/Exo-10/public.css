@@ -1,0 +1,39 @@
+img{
+    width: 800px;
+    height: 800px;
+    margin: 15px;
+    border: red 5px dashed;
+    animation-duration: 1s;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+    transition: none;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    color: burlywood;
+    background-color: darkolivegreen;
+}
+body{
+    background-color: chartreuse ;
+    position: relative;
+    margin: 0;
+}
+div{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+span{
+    color: burlywood;
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    font-weight: bold;
+    font-size: xx-large;
+}
+@keyframes clignoter {
+    0%   { opacity:1; }
+    40%   {opacity:0; }
+    100% { opacity:1; }
+  }

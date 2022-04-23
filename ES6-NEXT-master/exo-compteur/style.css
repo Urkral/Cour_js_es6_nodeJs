@@ -1,0 +1,29 @@
+#sortie{
+    width: 300px;
+}
+
+ul{
+    list-style: none;
+}
+li{
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: none;
+}
+#plus{
+    background-color: chartreuse;
+}
+#moins{
+    background-color: burlywood;
+}
+#compt{
+    font-size: large;
+    font-weight: bold;
+}

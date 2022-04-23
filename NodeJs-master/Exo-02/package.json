@@ -1,0 +1,14 @@
+{
+  "name": "exo-02",
+  "version": "1.0.0",
+  "description": "Return image exo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Esteboeuf",
+  "license": "ISC",
+  "dependencies": {
+    "image-js": "^0.34.0"
+  }
+}
